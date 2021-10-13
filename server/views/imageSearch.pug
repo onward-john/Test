@@ -1,0 +1,24 @@
+extends layout
+
+block title
+  title 搜尋結果 | GU 搜尋 | GU 比價
+
+block append css
+   link(rel='stylesheet' href='/static/css/imageSearch.css')
+
+block append js
+   script(src='/static/js/imageSearch.js')
+
+block content
+  main
+   .view
+      h2 搜尋結果
+         img#image_url.image_url(src= imageUrl)
+      #products.products
+      #msg.msg= msg
+      img#loading_gif.loading_gif(src='/static/imgs/loading.gif')
+      #object.object= object
+
+
+
+      

@@ -1,0 +1,15 @@
+extends layout
+
+block append css
+   link(rel='stylesheet' href='/static/css/category.css')
+
+block append js
+   script(src='/static/js/category.js')
+
+block content
+  main
+   p#lists= lists
+   p#typesMap= typesMap
+   #view.view
+
+      
